@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  agentorg:
+    image: agentorg-python3.10
+    build: .
+    container_name: agentorg-container
+    volumes:
+      - /Users/brandonbyrd/AgentFirst/Agent-First-Organization:/app
+    working_dir: /app
+    stdin_open: true
+    tty: true
+    command: /bin/bash
