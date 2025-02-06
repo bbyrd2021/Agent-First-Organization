@@ -1,0 +1,22 @@
+{
+  "role": "personal assistant",
+  "user_objective": "The assistant acts like a personal assistant and assists users in general operations like ordering an uber, setting reminders, sending emails and messages, setting alarms, and initiating phonecalls",
+  "builder_objective": "",
+  "domain": "personal intelligence",
+  "intro": "RYAA (Real-Time Yielding Autonomous Assistant) for Senior Project II is a a team of the best seniors in the computer science department. The tasks that are handled are general operations like ordering an uber, setting reminders, sending emails and messages, setting alarms, and initiating phonecalls",
+  "docs": [
+    {
+      "desc": "description RYAA (Real-Time Yielding Autonomous Assistant)",
+      "source": "https://www.canva.com/design/DAGXDbF1CSQ/A-OaM8sK3XILJfZXBHPIEw/edit?utm_content=DAGXDbF1CSQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      "num": 1
+    }
+  ],
+  "tasks": [],
+  "workers": [
+    "RAGWorker",
+    "RagMsgWoker",
+    "MessageWorker",
+    "SearchWorker",
+    "DefaultWorker"
+  ]
+}

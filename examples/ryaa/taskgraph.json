@@ -1,0 +1,466 @@
+{
+    "nodes": [
+        [
+            "0",
+            {
+                "name": "MessageWorker",
+                "attribute": {
+                    "value": "Hello! I'm your Personal Assistant. How can I assist you today? Whether you need help ordering an Uber, setting a reminder, sending an email, or anything else, I'm here to help!",
+                    "task": "start message",
+                    "directed": false
+                },
+                "limit": 1,
+                "type": "start"
+            }
+        ],
+        [
+            "1",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Could you please provide your trip details, including the pickup location, destination, and any vehicle type preferences you might have?",
+                    "task": "Inquire about the user's trip details, such as pickup location, destination, and vehicle type preferences.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "2",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Just to confirm, your pickup location is [Location A], destination is [Location B], and you prefer [Vehicle Type]. Is that correct?",
+                    "task": "Confirm the trip details with the user to ensure accuracy.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "3",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Let me check our policies and FAQs to ensure everything is in order for your Uber booking.",
+                    "task": "Use RAGWorker to check for any relevant policies or FAQs related to ordering an Uber.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "4",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "I am now ordering your Uber with the details you've confirmed.",
+                    "task": "Proceed to order the Uber based on the confirmed details.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "5",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Your Uber has been ordered successfully. It is expected to arrive in approximately 10 minutes. Please let me know if you need further assistance.",
+                    "task": "Provide the user with a confirmation of the Uber order, including expected arrival time and any additional information.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "6",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Let's set a reminder that suits your schedule and goals. Could you please specify the time and objective for the reminder?",
+                    "task": "Assist in setting reminders, ensuring they align with the user's preferences and objectives.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "7",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Could you please provide the recipient's email address and the subject of the email?",
+                    "task": "Ask the user for the recipient's email address and the subject of the email.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "8",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "What content would you like to include in the email?",
+                    "task": "Inquire about the content of the email that the user wants to send.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "9",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Could you please confirm the recipient's email address, the subject, and the content of the email?",
+                    "task": "Confirm the recipient, subject, and content of the email with the user to ensure accuracy.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "10",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Would you like to add any attachments to the email?",
+                    "task": "Ask if the user wants to add any attachments to the email.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "11",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Your email has been successfully sent.",
+                    "task": "Upon confirmation, proceed to send the email and inform the user of the successful sending of the email.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "12",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Who would you like to send the message to and what would you like to say?",
+                    "task": "Inquire about the recipient and the content of the message the user wishes to send, ensuring clarity and completeness.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "13",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Here is your message: 'Hello, John! Are you available for a meeting tomorrow at 10 AM?' Does this look correct, or would you like to make any changes?",
+                    "task": "Confirm the message details with the user to ensure accuracy and offer any suggestions for improvement if needed.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "14",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Your message has been sent successfully to John. Let me know if there's anything else I can assist you with.",
+                    "task": "Execute the action of sending the message and notify the user about the status of the action, emphasizing the efficiency and reliability of the service.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "15",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Would you like to send another message or explore more features? I'm here to help with anything you need.",
+                    "task": "Offer additional assistance if the user wants to send another message or needs further help, highlighting any additional features or benefits of the service to enhance user experience.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "16",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "I can help you set an alarm. Additionally, here are some tips to optimize your daily schedule for enhanced productivity. Would you like to know more?",
+                    "task": "Assist in setting alarms and offer additional tips for optimizing their daily schedule or enhancing productivity.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "17",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "I can help you initiate the phone call. Please let me know the details of whom you would like to contact and the purpose of the call.",
+                    "task": "Assist in initiating phone calls and ensure the process aligns with the assistant's overall objectives.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ]
+    ],
+    "edges": [
+        [
+            "0",
+            "1",
+            {
+                "intent": "User wants to order transportation",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "1",
+            "2",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "2",
+            "3",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "3",
+            "4",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "4",
+            "5",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "6",
+            {
+                "intent": "User wants to set a reminder",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "7",
+            {
+                "intent": "User wants to send an email",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "7",
+            "8",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "8",
+            "9",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "9",
+            "10",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "10",
+            "11",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "12",
+            {
+                "intent": "User wants to send a message",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "12",
+            "13",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "13",
+            "14",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "14",
+            "15",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "16",
+            {
+                "intent": "User wants to set an alarm",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "17",
+            {
+                "intent": "User wants to make a phone call",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ]
+    ],
+    "role": "personal assistant",
+    "user_objective": "The assistant acts like a personal assistant and assists users in general operations like ordering an uber, setting reminders, sending emails and messages, setting alarms, and initiating phonecalls",
+    "builder_objective": "",
+    "domain": "personal intelligence",
+    "intro": "RYAA (Real-Time Yielding Autonomous Assistant) for Senior Project II is a a team of the best seniors in the computer science department. The tasks that are handled are general operations like ordering an uber, setting reminders, sending emails and messages, setting alarms, and initiating phonecalls",
+    "rag_docs": [
+        {
+            "desc": "description of RYAA (Real-Time Yielding Autonomous Assistant)",
+            "source": "https://www.canva.com/design/DAGXDbF1CSQ/A-OaM8sK3XILJfZXBHPIEw/edit?utm_content=DAGXDbF1CSQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+            "num": 1
+        }
+    ],
+    "tasks": [],
+    "workers": [
+        "RAGWorker",
+        "RagMsgWorker",
+        "MessageWorker",
+        "SearchWorker",
+        "DefaultWorker"
+    ],
+    "nluapi": "http://localhost:55135/nlu/predict",
+    "slotfillapi": "http://localhost:55135/slotfill/predict"
+}

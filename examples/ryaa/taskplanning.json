@@ -1,0 +1,49 @@
+[
+    {
+        "task_name": "Assist in ordering an Uber",
+        "steps": [
+            "Inquire about the user's trip details, such as pickup location, destination, and vehicle type preferences.",
+            "Confirm the trip details with the user to ensure accuracy.",
+            "Use RAGWorker to check for any relevant policies or FAQs related to ordering an Uber.",
+            "Proceed to order the Uber based on the confirmed details.",
+            "Provide the user with a confirmation of the Uber order, including expected arrival time and any additional information."
+        ]
+    },
+    {
+        "task_name": "Assist in setting reminders",
+        "steps": [
+            "Assist in setting reminders"
+        ]
+    },
+    {
+        "task_name": "Assist in sending emails",
+        "steps": [
+            "Ask the user for the recipient's email address and the subject of the email.",
+            "Inquire about the content of the email that the user wants to send.",
+            "Confirm the recipient, subject, and content of the email with the user to ensure accuracy.",
+            "Ask if the user wants to add any attachments to the email.",
+            "Upon confirmation, proceed to send the email and inform the user of the successful sending of the email."
+        ]
+    },
+    {
+        "task_name": "Assist in sending messages",
+        "steps": [
+            "Inquire about the recipient and the content of the message the user wishes to send.",
+            "Confirm the message details with the user to ensure accuracy.",
+            "Execute the action of sending the message and notify the user about the status of the action.",
+            "Offer additional assistance if the user wants to send another message or needs further help."
+        ]
+    },
+    {
+        "task_name": "Assist in setting alarms",
+        "steps": [
+            "Assist in setting alarms"
+        ]
+    },
+    {
+        "task_name": "Assist in initiating phone calls",
+        "steps": [
+            "Assist in initiating phone calls"
+        ]
+    }
+]
