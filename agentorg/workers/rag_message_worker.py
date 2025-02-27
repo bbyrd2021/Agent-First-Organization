@@ -22,14 +22,16 @@ class RagMsgWorker(BaseWorker):
         super().__init__()
         self.action_graph = self._create_action_graph()
         self.llm = ChatOpenAI(model=MODEL["model_type_or_path"], timeout=30000)
-     
+
     def _create_action_graph(self):
         workflow = StateGraph(MessageState)
         # Add nodes for each worker
         rag_wkr = RAGWorker()
         msg_wkr = MessageWorker()
+
         workflow.add_node("rag_worker", rag_wkr.execute)
         workflow.add_node("message_worker", msg_wkr.execute)
+        workflow.add_node("chain_of_thought_worker", self.generator)
         # Add edges
         workflow.add_edge(START, "rag_worker")
         workflow.add_edge("rag_worker", "message_worker")
