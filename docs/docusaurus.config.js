@@ -10,19 +10,20 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'ArkLex: Agent First Organization',
-  tagline: 'A New Generation of AI Agents with the capability of',
+  title: 'Arklex AI Agent Framework',
+  tagline: `Blends structured AI workflows and autonomous planning to deliver reliable, controlled and efficient results`,
+
   favicon: 'img/articulateai.png',
 
   // Set the production url of your site here
-  url: 'https://articulateai.github.io',
+  url: 'https://arklexai.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/Agent-First-Organization/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'articulateai', // Usually your GitHub org/user name.
+  organizationName: 'arklexai', // Usually your GitHub org/user name.
   projectName: 'Agent-First-Organization', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
@@ -53,7 +54,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/ArticulateAI/Agent-First-Organization/tree/v0.0.1/docs',
+            'https://github.com/arklexai/Agent-First-Organization/tree/main/docs',
         },
         blog: {
           showReadingTime: true,
@@ -64,7 +65,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/ArticulateAI/Agent-First-Organization/tree/v0.0.1/docs',
+            'https://github.com/arklexai/Agent-First-Organization/tree/main/docs',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -76,7 +77,13 @@ const config = {
       }),
     ],
   ],
+  themeConfig: {
+    colorMode: {
+      disableSwitch: true, // Disables the theme toggle button
+    },
+  },
 
+<<<<<<< HEAD
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -111,53 +118,14 @@ const config = {
             position: 'right',
           },
         ],
+=======
+    scripts: [
+      {
+        src: '/js/rb2b-tracking.js',
+        async: false,
+>>>>>>> main
       },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/tutorials/customer-service',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/ArticulateAI/Agent-First-Organization',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discord.gg/jpZs3GqnTG',
-              },
-            ],
-          },
-          // {
-          //   title: 'More',
-          //   items: [
-          //     {
-          //       label: 'Blog',
-          //       to: '/blog',
-          //     },
-          //     {
-          //       label: 'GitHub',
-          //       href: 'https://github.com/facebook/docusaurus',
-          //     },
-          //   ],
-          // },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
-    }),
+    ],
 };
 
 export default config;
